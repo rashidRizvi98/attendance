@@ -87,7 +87,8 @@ if(!isset($_GET["id"])){
         value="<?php echo $attendee['contactNumber']?>" >
         <small id="phoneHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
-    <button type="submit" name="submit" class="btn btn-success btn-block">Submit</button>
+    <a  href="viewRecords.php" class="btn btn-default btn">Back to list</a>
+    <button type="submit" name="submit" class="btn btn-success btn">Submit</button>
 </form>
 
 <?php }
