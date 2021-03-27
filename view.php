@@ -1,6 +1,7 @@
 <?php
 $title = "View Record";
 require_once "includes/header.php";
+require_once "includes/authCheck.php";
 require_once 'db/conn.php';
 
 //Get Attendee By ID
@@ -15,7 +16,7 @@ if(!isset($_GET['id'])){
 
 
 ?>
-
+<img src="<?php echo empty($result['avatarPath'])?"uploads/blank.jpg" :$result['avatarPath'];?>" alt="" class="rounded-circle" style="width:20%; height:20%" >
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">

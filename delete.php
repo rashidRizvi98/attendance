@@ -1,4 +1,5 @@
 <?php 
+require_once "includes/authCheck.php";
 require_once 'db/conn.php';
 
 if(!$_GET["id"]){
